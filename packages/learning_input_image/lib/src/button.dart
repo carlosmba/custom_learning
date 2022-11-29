@@ -30,8 +30,8 @@ class NormalBlueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return NormalButton(
       text: text,
-      background: Colors.lightBlue,
-      gradientColors: [Colors.lightBlue, Colors.lightBlue[800]!],
+      background: Colors.purple,
+      gradientColors: [Colors.purple, Colors.purple[800]!],
       onPressed: onPressed,
     );
   }

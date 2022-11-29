@@ -229,14 +229,14 @@ class _InputCameraViewState extends State<InputCameraView> {
           ],
           Center(
             child: NormalBlueButton(
-              text: 'Choose Image',
+              text: 'Seleccionar imagen',
               onPressed: _chooseImage,
             ),
           ),
           SizedBox(height: 8),
           Center(
             child: NormalBlueButton(
-              text: 'Take Photo',
+              text: 'Tomar foto',
               onPressed: _takePhoto,
             ),
           ),
@@ -306,6 +306,11 @@ class _InputCameraViewState extends State<InputCameraView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xff8a36d2),
+        titleTextStyle: const TextStyle(
+            color: Colors.black,
+            fontSize: 20,
+            fontWeight: FontWeight.w500),
         centerTitle: !widget.canSwitchMode,
         title: Text(widget.title),
         actions: [
